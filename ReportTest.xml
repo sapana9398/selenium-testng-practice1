@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"></listener>
+    </listeners>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="environment" value="Test"></parameter>
+
+    <test verbose="2" preserve-order="true"
+          name="Test">
+        <classes>
+            <class name="testScripts.LoginScripts" />
+        </classes>
+    </test>
+</suite>
+

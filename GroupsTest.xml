@@ -1,0 +1,22 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <groups>
+        <run>
+            <include name="Smoke"></include>
+        </run>
+    </groups>
+    <test name="Group Validation Test">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="environment" value="Test"></parameter>
+
+        <classes>
+            <class name="testScripts.LoginDataDrivenTest" />
+            <class name="testScripts.LoginScripts" />
+            <class name="testScripts.RegistrationScripts"/>
+        </classes>
+    </test>
+</suite>

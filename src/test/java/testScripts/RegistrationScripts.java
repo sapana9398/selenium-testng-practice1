@@ -1,32 +1,55 @@
 package testScripts;
 
 import baseTest.BaseTest;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pageClasses.HomePage;
 import pageClasses.RegisterPage;
 
+import java.time.Duration;
+
 public class RegistrationScripts extends BaseTest {
 
-    @Test
+    @Test (groups={"Regression","Sanity"})
     public void doRegistration(){
-        logger.info("Execution of doRegistration Test Script Started");
 
-        HomePage HomePageOb = new HomePage(driver);
-        HomePageOb.clickOnMyAccount();
-        HomePageOb.clickOnRegister();
-        logger.info("Clicked on Register Tab");
+        logger.debug("Execution of doRegistration test script started");
 
-        RegisterPage RegisterPageob = new RegisterPage(driver);
-        RegisterPageob.setFirstName("Sapana");
-        RegisterPageob.setLastName("Ghodela");
-        RegisterPageob.setEmail("sapana9398@gmail.com");
-        RegisterPageob.setTelephone("9028420988");
-        RegisterPageob.setPassword("Ashu1234");
-        RegisterPageob.setConfirm("Ashu1234");
-        RegisterPageob.clickCheckbox();
-        logger.info("Entered all mandatory fields");
+        HomePage HomePageObj = new HomePage(driver);
+        HomePageObj.clickMyAccountTab();
+        logger.debug("clicked on my account tab");
+        HomePageObj.clickOnRegisterLink();
+        logger.debug("clickOnRegisterLink");
 
-        RegisterPageob.clickSubmit();
-        logger.info("Form Submission successful");
+        RegisterPage RegistrationPageObj = new RegisterPage(driver);
+        RegistrationPageObj.setFirstName("Sapana");
+        RegistrationPageObj.setLastName("Ghodela");
+        RegistrationPageObj.setEmail("Nsapana9398@gmail.com");
+        RegistrationPageObj.setTelephone("12345");
+        RegistrationPageObj.setPassword("Pass12345");
+        RegistrationPageObj.setConfirmPwd("Pass12345");
+
+        logger.debug("Entered all the mandatory fields");
+
+        RegistrationPageObj.clickOnContinue();
+
+        Assert.assertTrue(false);
+
+
+        //validation
     }
+
+
+
+
+
+
+
+
+
+
 }

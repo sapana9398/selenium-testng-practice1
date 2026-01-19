@@ -1,16 +1,13 @@
-2025-12-29 23:10:50 INFO  RegistrationScripts:12 - Execution of doRegistration Test Script Started
-2025-12-29 23:10:51 INFO  RegistrationScripts:17 - Clicked on Register Tab
-2025-12-29 23:10:52 INFO  RegistrationScripts:27 - Entered all mandatory fields
-2025-12-29 23:10:53 INFO  RegistrationScripts:30 - Form Submission successful
-2025-12-29 23:55:06 INFO  RegistrationScripts:12 - Execution of doRegistration Test Script Started
-2025-12-29 23:55:07 INFO  RegistrationScripts:12 - Execution of doRegistration Test Script Started
-2025-12-29 23:55:07 INFO  RegistrationScripts:17 - Clicked on Register Tab
-2025-12-29 23:55:08 INFO  RegistrationScripts:17 - Clicked on Register Tab
-2025-12-29 23:55:08 INFO  RegistrationScripts:27 - Entered all mandatory fields
-2025-12-29 23:55:09 INFO  RegistrationScripts:12 - Execution of doRegistration Test Script Started
-2025-12-29 23:55:09 INFO  RegistrationScripts:27 - Entered all mandatory fields
-2025-12-29 23:55:10 INFO  RegistrationScripts:30 - Form Submission successful
-2025-12-29 23:55:10 INFO  RegistrationScripts:30 - Form Submission successful
-2025-12-29 23:55:10 INFO  RegistrationScripts:17 - Clicked on Register Tab
-2025-12-29 23:55:11 INFO  RegistrationScripts:27 - Entered all mandatory fields
-2025-12-29 23:55:11 INFO  RegistrationScripts:30 - Form Submission successful
+2026-01-19 17:15:12 INFO  LoginDataDrivenTest:18 - Starting performLoginWithDifferentData script
+2026-01-19 17:15:28 INFO  LoginDataDrivenTest:32 - logged in successfully
+2026-01-19 17:15:43 INFO  LoginDataDrivenTest:18 - Starting performLoginWithDifferentData script
+2026-01-19 17:15:45 INFO  LoginDataDrivenTest:32 - logged in successfully
+2026-01-19 17:15:46 INFO  LoginDataDrivenTest:45 - Validaiton is failed
+2026-01-19 17:15:46 INFO  LoginDataDrivenTest:18 - Starting performLoginWithDifferentData script
+2026-01-19 17:15:48 INFO  LoginDataDrivenTest:32 - logged in successfully
+2026-01-19 17:15:48 INFO  LoginDataDrivenTest:45 - Validaiton is failed
+2026-01-19 17:15:48 INFO  LoginDataDrivenTest:18 - Starting performLoginWithDifferentData script
+2026-01-19 17:16:04 INFO  LoginDataDrivenTest:32 - logged in successfully
+2026-01-19 17:16:19 INFO  LoginDataDrivenTest:18 - Starting performLoginWithDifferentData script
+2026-01-19 17:16:21 INFO  LoginDataDrivenTest:32 - logged in successfully
+2026-01-19 17:16:22 INFO  LoginDataDrivenTest:45 - Validaiton is failed

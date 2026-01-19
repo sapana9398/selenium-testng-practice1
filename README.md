@@ -1,18 +1,12 @@
-# Selenium TestNG Practice Project
+# Selenium TestNG Practice Framework
 
-This project is created to practice Selenium Automation Testing using Java and TestNG.
-It follows basic automation framework concepts such as Page Object Model, TestNG execution, and logging.
+A simple Selenium automation framework built using Java, TestNG, Maven, and Page Object Model (POM) with Page Factory.  
+Created for hands-on practice of real-time automation concepts.
 
 ---
 
 ## Tools & Technologies
-- Java
-- Selenium WebDriver
-- TestNG
-- Maven
-- Log4j2 (basic logging)
-- IntelliJ IDEA
-- Git & GitHub
+Java • Selenium • TestNG • Maven • Log4j2 • Extent Reports • GitHub • IntelliJ IDEA
 
 ---
 
@@ -20,7 +14,7 @@ It follows basic automation framework concepts such as Page Object Model, TestNG
 All automation code is maintained under `src/test/java`.
 
 - **basePage** – Common reusable methods for page classes
-- **baseTest** – Test setup and teardown logic
+- **baseTest** – Browser setup & teardown
 - **pageClasses** – Page Object Model classes implemented using Page Factory
 - **testScripts** – TestNG test cases
 - **utilities** – Helper and utility classes
@@ -28,17 +22,22 @@ All automation code is maintained under `src/test/java`.
 ---
 
 ## TestNG XML Files
-- **MultipleBrowserTestNG.xml**  
-  Used to execute test cases on multiple browsers.
-
-- **ParallelExecutionTestNG.xml**  
-  Used to execute test cases in parallel using TestNG.
+- **MultipleBrowserTestNG.xml** – Run tests on different browsers
+- **ParallelExecutionTestNG.xml** – Parallel test execution
+- **GroupsTest.xml** – Group-based execution
+- **DataDrivenTesting.xml** – Runs tests with multiple data sets
+- **ReportTest.xml** – Generates Extent Reports
 
 ---
 
-## Logging
-- Basic logging is implemented using **Log4j2**
-- Logs are generated in a `logs` folder for test execution tracking
+## Features Practiced
+- Page Object Model + Page Factory
+- Parallel and multi-browser execution
+- Grouping and parameterization
+- Data-driven testing
+- Screenshot capture on failure
+- Basic logging using Log4j2
+- Extent report generation
 
 ---
 
@@ -55,16 +54,6 @@ Automation is performed on a public demo e-commerce website used for practice:
 
 ---
 
-## Learning Objectives
-- Practice Selenium WebDriver automation
-- Implement TestNG-based framework
-- Understand Page Object Model
-- Execute tests using TestNG XML
-- Implement basic logging
-- Gain hands-on Git & GitHub experience
-
----
-
 ## Author
-Sapana Ghodela  
-QA Analyst / Manual & Automation Testing
+**Sapana Ghodela**  
+QA Engineer – Manual & Automation Testing

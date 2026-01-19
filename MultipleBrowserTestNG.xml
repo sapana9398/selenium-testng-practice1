@@ -1,61 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="All Test Suite1">
 
-    <test verbose="2" preserve-order="true"
-          name="Regression_chrome">
-
-        <parameter name="browser" value="chrome"></parameter>
-
-        <classes>
-            <class name="testScripts.RegistrationScripts">
-                <methods>
-                    <include name="doRegistration"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
-    <test verbose="2" preserve-order="true"
-          name="Regression_Edge">
-
-        <parameter name="browser" value="Edge"></parameter>
-
-        <classes>
-            <class name="testScripts.RegistrationScripts">
-                <methods>
-                    <include name="doRegistration"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
-    <test verbose="2" preserve-order="true"
-          name="Regression_IE">
-
-        <parameter name="browser" value="ie"></parameter>
-
-        <classes>
-            <class name="testScripts.RegistrationScripts">
-                <methods>
-                    <include name="doRegistration"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
-    <test verbose="2" preserve-order="true"
-          name="Regression_firefox">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Regression_firefox">
 
         <parameter name="browser" value="firefox"></parameter>
-
+        <parameter name="environment" value="Test"></parameter>
         <classes>
-            <class name="testScripts.RegistrationScripts">
-                <methods>
-                    <include name="doRegistration"/>
-                </methods>
+            <class name="testScripts.LoginScripts">
             </class>
         </classes>
     </test>
+
+    <test verbose="2" preserve-order="true" name="Regression_Chrome">
+
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="environment" value="Test"></parameter>
+        <classes>
+            <class name="testScripts.LoginScripts">
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Regression_edge">
+
+        <parameter name="browser" value="edge"></parameter>
+        <parameter name="environment" value="Test"></parameter>
+        <classes>
+            <class name="testScripts.LoginScripts">
+            </class>
+        </classes>
+    </test>
+
 </suite>
